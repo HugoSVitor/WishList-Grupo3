@@ -15,6 +15,3 @@ CREATE TABLE ListaDesejos(
 	Descricao VARCHAR(250) NOT NULL,
 	DataCriacao DATETIME
 )
-
-
-
