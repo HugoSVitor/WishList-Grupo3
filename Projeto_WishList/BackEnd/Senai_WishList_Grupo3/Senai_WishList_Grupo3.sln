@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senai_WishList_Grupo3", "Senai_WishList_Grupo3\Senai_WishList_Grupo3.csproj", "{234DE81F-7806-4D80-8F9E-D5CC170C6377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{234DE81F-7806-4D80-8F9E-D5CC170C6377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234DE81F-7806-4D80-8F9E-D5CC170C6377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234DE81F-7806-4D80-8F9E-D5CC170C6377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234DE81F-7806-4D80-8F9E-D5CC170C6377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1933C2D-0DC6-4200-B960-A106D1806D52}
+	EndGlobalSection
+EndGlobal
