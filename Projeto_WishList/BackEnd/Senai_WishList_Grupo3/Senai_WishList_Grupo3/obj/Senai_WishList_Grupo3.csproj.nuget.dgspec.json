@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj": {}
+    "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj": {
+    "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
+        "projectUniqueName": "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
         "projectName": "Senai_WishList_Grupo3",
-        "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
-        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\obj\\",
+        "projectPath": "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
+        "packagesPath": "C:\\Users\\Werther\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Werther\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

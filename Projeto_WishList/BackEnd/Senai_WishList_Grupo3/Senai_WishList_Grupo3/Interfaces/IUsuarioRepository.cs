@@ -8,6 +8,6 @@ namespace Senai_WishList_Grupo3.Interfaces
 {
     interface IUsuarioRepository
     {
-        List<Usuario> ListarUsuarios();
+        List<Usuario> ListarTodos();
     }
 }

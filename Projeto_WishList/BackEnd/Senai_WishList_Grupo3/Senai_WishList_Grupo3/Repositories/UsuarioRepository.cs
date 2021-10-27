@@ -10,11 +10,12 @@ namespace Senai_WishList_Grupo3.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        WishListContext ctx = new WishListContext();
+        WishListContext metodos = new WishListContext();
 
-        public List<Usuario> ListarUsuarios()
+
+        public List<Usuario> ListarTodos()
         {
-            return ctx.Usuarios.ToList();
+            return metodos.Usuarios.ToList();
         }
     }
 }
