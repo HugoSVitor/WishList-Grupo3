@@ -7739,19 +7739,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\45999057809\\.nuget\\packages\\": {}
+    "C:\\Users\\Werther\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\45999057809\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
+      "projectUniqueName": "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
       "projectName": "Senai_WishList_Grupo3",
-      "projectPath": "C:\\Users\\45999057809\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
-      "packagesPath": "C:\\Users\\45999057809\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\45999057809\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\obj\\",
+      "projectPath": "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3.csproj",
+      "packagesPath": "C:\\Users\\Werther\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Werther\\Desktop\\WishList-Grupo3\\Projeto_WishList\\BackEnd\\Senai_WishList_Grupo3\\Senai_WishList_Grupo3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\45999057809\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Werther\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7822,7 +7822,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
