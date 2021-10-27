@@ -8,22 +8,20 @@ using System.Threading.Tasks;
 
 namespace Senai_WishList_Grupo3.Repositories
 {
-    public class UsuarioRepository : IUsuarioRepository
+    public class ListaDesejoRepository : IListaDesejoRepository
     {
-<<<<<<< HEAD
-        WishListContext ctx = new WishListContext();
-
-        public List<Usuario> ListarUsuarios()
-        {
-            return ctx.Usuarios.ToList();
-=======
         WishListContext metodos = new WishListContext();
 
 
-        public List<Usuario> ListarTodos()
+        public void Cadastrar(ListaDesejo novoDesejo)
         {
-            return metodos.Usuarios.ToList();
->>>>>>> samuel
+            metodos.ListaDesejos.Add(novoDesejo);
+            metodos.SaveChanges();
+        }
+
+        public List<ListaDesejo> ListarTodos()
+        {
+            return metodos.ListaDesejos.ToList();
         }
     }
 }
