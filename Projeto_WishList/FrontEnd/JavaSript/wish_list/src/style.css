@@ -58,6 +58,12 @@ input {
     margin-bottom: 55px;
 }
 
+thead {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .lista_desejos h2 {
     margin-top: 20px;
 }
@@ -69,9 +75,12 @@ input {
     justify-content: center;
 }
 
-.lista_desejos table tbody {
+.titulo_tabela {
     margin-top: unset;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .usuarios {

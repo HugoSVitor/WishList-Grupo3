@@ -1,14 +1,14 @@
-import './App.css';
-import {Component} from 'react';
+import './style.css';
+import { Component } from 'react';
 
 export default class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      listaDesejos : [],
-      listaUsuarios : [],
-      novoDesejo : '',
-      idUsuario : ''
+      listaDesejos: [],
+      listaUsuarios: [],
+      novoDesejo: '',
+      idUsuario: ''
     }
   };
 
@@ -16,21 +16,21 @@ export default class App extends Component {
     //console.log('acionou essa funcao')
 
     await this.setState({
-        //dizendo que o target (alvo) do evento ,  vamos pegar o value(valor) 
-        idUsuario: event.target.value
+      //dizendo que o target (alvo) do evento ,  vamos pegar o value(valor) 
+      idUsuario: event.target.value
     });
     console.log(this.state.idUsuario);
-};
+  };
 
-atualizaNovoDesejo = async (event) => {
-  //console.log('acionou essa funcao')
+  atualizaNovoDesejo = async (event) => {
+    //console.log('acionou essa funcao')
 
-  await this.setState({
+    await this.setState({
       //dizendo que o target (alvo) do evento ,  vamos pegar o value(valor) 
       novoDesejo: event.target.value
-  });
-  console.log(this.state.novoDesejo);
-};
+    });
+    console.log(this.state.novoDesejo);
+  };
 
 
   listarDesejos = () => {
@@ -38,11 +38,11 @@ atualizaNovoDesejo = async (event) => {
 
     fetch('http://localhost:5000/api/ListaDesejos')
 
-    .then(resposta => resposta.json())
+      .then(resposta => resposta.json())
 
-    .then(dados => this.setState({listaDesejos : dados}))
+      .then(dados => this.setState({ listaDesejos: dados }))
 
-    .catch(erro => console.log(erro))
+      .catch(erro => console.log(erro))
   }
 
   listarUsuarios = () => {
@@ -50,11 +50,31 @@ atualizaNovoDesejo = async (event) => {
 
     fetch('http://localhost:5000/api/Usuarios')
 
-    .then(resposta => resposta.json)
+      .then(resposta => resposta.json())
 
-    .then(dados => this.setState({listaUsuarios : dados}))
+      .then(dados => this.setState({ listaUsuarios: dados }))
 
-    .catch(erro => console.log(erro))
+      .catch(erro => console.log(erro))
+  }
+
+  cadastrarDesejo = (event) => {
+    event.preventDefault();
+    console.log("Método cadastrar chamado")
+
+    fetch('http://localhost:5000/api/ListaDesejos', {
+
+      method: 'POST',
+      //body: { Descricao = this.state.novoDesejo  } //lembrando que aqui é o objeto JS, e nao JSON;
+
+      body: JSON.stringify({ descricao: this.state.novoDesejo, idUsuario: this.state.idUsuario }),
+
+      headers: { "Content-Type": "application/json" }
+    })
+      .then(console.log("Desejo cadastrado."))
+
+      .catch(erro => console.log(erro))
+
+      .then(this.listarDesejos);
   }
 
   componentDidMount() {
@@ -66,69 +86,111 @@ atualizaNovoDesejo = async (event) => {
   render() {
     return (
       <div>
-        <main>         
-          <section>
-            <input type="text" value={this.state.idUsuario} placeholder="Insira o id do usuario" onChange={this.atualizaIdUsuario} />
-            <input type="text" value={this.state.novoDesejo} placeholder="Insira seu desejo" onChange={this.atualizaNovoDesejo} />
-            <button >Cadastrar</button>
-          </section>
-            <h2>Desejos</h2>
-          <section>
-            <h3>Lista dos Desejos</h3>
-            <table>
+
+        <header>
+          <div className="container_header">
+            <img className="img_header" src="imgs/LogoTipoLogo.svg" alt="LogoTipo"></img>
+            <nav className="nav_header">
+              <a href="#">Desejos</a>
+              <a href="#">Usuários</a>
+            </nav>
+          </div>
+        </header>
+
+        <div className="grid">
+          <main className="tamanho">
+            <div>
+              <title className="center formatar">Desejos</title>
+            </div>
+
+            <div className="fundo_cadastrar">
+              <h2 className="center">Cadastrar</h2>
+
+              <section className="cadastrar">
+                <form className="input" onSubmit={this.cadastrarDesejo}>
+                  <input type="text" value={this.state.idUsuario} placeholder="Insira o id do usuario" onChange={this.atualizaIdUsuario} />
+                  <input type="text" value={this.state.novoDesejo} placeholder="Insira seu desejo" onChange={this.atualizaNovoDesejo} />
+
+                  <button type="submit">Cadastrar</button>
+                </form>
+              </section>
+            </div>
+
+
+
+            <section className="lista_desejos">
+              <h2>Lista dos Desejos</h2>
+              <table>
+
                 <thead>
-                  <tr>
-                    <th>#</th>
+                  <tr className="titulo_tabela">
+                    <th>idDesejo</th>
                     <th>idUsuario</th>
                     <th>Desejo</th>
-                    <th>Data</th>
                   </tr>
                 </thead>
                 <tbody>
                   {
-                    this.state.listaDesejos.map((Desejo) =>{
-                      console.log(Desejo);
-                      return(
-                        <tr key={Desejo.idDesejo}>
+                    this.state.listaDesejos.map((Desejo) => {
+
+                      return (
+                        <tr key={Desejo.IdDesejo}>
+                          {console.log(this.idDesejo)}
                           <td>{Desejo.idDesejo}</td>
                           <td>{Desejo.idUsuario}</td>
                           <td>{Desejo.descricao}</td>
-                          <td>{Desejo.DataCriacao}</td>                          
+                          <td>{Desejo.DataCriacao}</td>
                         </tr>
                       )
                     })
                   }
                 </tbody>
-            </table>
-          </section>
-          <h2>Usuario</h2>
-          <section>
-                  <h3>Lista dos usuarios</h3>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                      </tr>
-                      </thead>
+              </table>
+            </section>
 
-                      <tbody>
-                        {/* {
-                          this.state.listaUsuarios.map((Usuario) => {
-                            return(
-                              <tr key={Usuario.IdUsuario}>
-                                <td>{Usuario.IdUsuario}</td>
-                                <td>{Usuario.Nome}</td>
-                                <td>{Usuario.Email}</td>
-                              </tr>
-                            )
-                          })
-                        } */}
-                      </tbody>
-                  </table>
-          </section>
-        </main>
+            <div>
+              <title className="center formatar">Usuarios</title>
+            </div>
+
+            <section className="ajuste grif usuarios">
+              <h2>Lista dos usuarios</h2>
+              <table>
+                <thead className="">
+                  <tr className="titulo_tabela">
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {
+                    this.state.listaUsuarios.map((Usuario) => {
+                      return (
+                        <tr key={Usuario.IdUsuario}>
+                          <td>{Usuario.idUsuario}</td>
+                          <td>{Usuario.nome}</td>
+                          <td>{Usuario.email}</td>
+                        </tr>
+                      )
+                    })
+                  }
+                </tbody>
+              </table>
+            </section>
+          </main>
+        </div>
+
+        <footer>
+
+          <div class="container_footer">
+            <img class="img_footer" src="imgs/LogoTipoLogo.svg" alt="LogoTipo"></img>
+            <nav class="nav_header">
+              <a href="#">Informações</a> • <a href="#">Suporte</a> • <a href="#">Privacidade e Política</a>
+            </nav>
+          </div>
+
+        </footer>
       </div>
     )
   }

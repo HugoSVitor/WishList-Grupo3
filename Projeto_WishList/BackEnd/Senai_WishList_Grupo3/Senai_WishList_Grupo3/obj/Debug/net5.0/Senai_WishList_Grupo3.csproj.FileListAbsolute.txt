@@ -143,3 +143,5 @@ C:\Users\Werther\Desktop\WishList-Grupo3\Projeto_WishList\BackEnd\Senai_WishList
 C:\Users\Werther\Desktop\WishList-Grupo3\Projeto_WishList\BackEnd\Senai_WishList_Grupo3\Senai_WishList_Grupo3\obj\Debug\net5.0\Senai_WishList_Grupo3.pdb
 C:\Users\Werther\Desktop\WishList-Grupo3\Projeto_WishList\BackEnd\Senai_WishList_Grupo3\Senai_WishList_Grupo3\obj\Debug\net5.0\Senai_WishList_Grupo3.genruntimeconfig.cache
 C:\Users\Werther\Desktop\WishList-Grupo3\Projeto_WishList\BackEnd\Senai_WishList_Grupo3\Senai_WishList_Grupo3\obj\Debug\net5.0\Senai_WishList_Grupo3.csproj.CopyComplete
+C:\Users\45999057809\Desktop\WishList-Grupo3\Projeto_WishList\BackEnd\Senai_WishList_Grupo3\Senai_WishList_Grupo3\bin\Debug\net5.0\Senai_WishList_Grupo3.xml
+C:\Users\45999057809\Desktop\WishList-Grupo3\Projeto_WishList\BackEnd\Senai_WishList_Grupo3\Senai_WishList_Grupo3\obj\Debug\net5.0\Senai_WishList_Grupo3.xml
