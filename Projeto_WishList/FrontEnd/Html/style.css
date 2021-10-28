@@ -66,13 +66,12 @@ input {
     max-width: unset;
     width: 60%;
     margin-bottom: 50px;
+    justify-content: center;
 }
 
 .lista_desejos table tbody {
     margin-top: unset;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .usuarios {
@@ -187,14 +186,6 @@ th {
     color: white;
     margin-top: 15px;
 }
-
-
-/* .tr1 {
-    height: 70px;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
-} */
 
 .container_header {
     height: 80px;
