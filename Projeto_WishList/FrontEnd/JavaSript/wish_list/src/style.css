@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+.corpo {
+    background-color: #F0F0F0;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+table {
+    display: flex;
+    justify-content: space-between;
+}
+
 .img_header {
     margin-left: 100px;
 }
@@ -14,24 +28,32 @@
 }
 
 .fundo_cadastrar {
-    width: 40%;
+    width: 60%;
+    height: 7vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 30%;
-    margin-right: 30%;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 50px;
     background-color: #D5E1FA;
     border-radius: 10px;
 }
 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cadastrar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 6%;
+    height: 40%;
     margin: 20px;
     margin-top: 0px;
 }
@@ -59,7 +81,7 @@ input {
 }
 
 thead {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -80,7 +102,6 @@ thead {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
 }
 
 .usuarios {

@@ -85,11 +85,11 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="corpo">
 
         <header>
           <div className="container_header">
-            <img className="img_header" src="imgs/LogoTipoLogo.svg" alt="LogoTipo"></img>
+            <img className="img_header" src="LogoTipoLogo.svg" alt="LogoTipo"/>
             <nav className="nav_header">
               <a href="#">Desejos</a>
               <a href="#">Usuários</a>
@@ -107,11 +107,12 @@ export default class App extends Component {
               <h2 className="center">Cadastrar</h2>
 
               <section className="cadastrar">
-                <form className="input" onSubmit={this.cadastrarDesejo}>
-                  <input type="text" value={this.state.idUsuario} placeholder="Insira o id do usuario" onChange={this.atualizaIdUsuario} />
-                  <input type="text" value={this.state.novoDesejo} placeholder="Insira seu desejo" onChange={this.atualizaNovoDesejo} />
-
-                  <button type="submit">Cadastrar</button>
+                <form onSubmit={this.cadastrarDesejo}>
+                  <div className="input">
+                    <input type="text" value={this.state.idUsuario} placeholder="Insira o id do usuario" onChange={this.atualizaIdUsuario} />
+                    <input type="text" value={this.state.novoDesejo} placeholder="Insira seu desejo" onChange={this.atualizaNovoDesejo} />
+                  </div>
+                  <button className="btn_cadastrar" type="submit">Cadastrar</button>
                 </form>
               </section>
             </div>
@@ -184,7 +185,7 @@ export default class App extends Component {
         <footer>
 
           <div class="container_footer">
-            <img class="img_footer" src="imgs/LogoTipoLogo.svg" alt="LogoTipo"></img>
+            <img class="img_footer" src="LogoTipoLogo.svg" alt="LogoTipo"/>
             <nav class="nav_header">
               <a href="#">Informações</a> • <a href="#">Suporte</a> • <a href="#">Privacidade e Política</a>
             </nav>
